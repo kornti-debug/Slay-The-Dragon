@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+}
+
+body{
+    font-family:'Courier New', Courier;
+    text-align: center;
+    color: white;
+    background-image: url('./images/robot_dragon.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+span{
+    font-weight: 900;
+}
+
+.game-container{
+
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#buttonContainer{
+    display: flex;
+}
+
+#player-stats{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(82, 82, 82, 0.5);
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+
+#textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+span{
+    font-weight: bold;
+}
+
+.gold{
+    color: yellow;
+}
+
+.health{
+    color: red;
+}
+
+.damage{
+    color:green;
+}
+
+.name{
+    color: rgb(63, 207, 255);
+}
+
+.key{
+    color: orange;
+}
+
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.locationButton{
+    background-color: #3a0a70;
+}
+
+.enemyButton{
+    background-color: #ad2408;
+}
+
+.actionButton{
+    background-color: #e0dc0b;
+    color: black;
+}
+
+.startButton{
+    background-color: burlywood;
+    color: black;
+}
+

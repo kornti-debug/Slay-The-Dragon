@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slay the Dragon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Slay the DRAGON 🐉</h1>
+        <hr>
+
+        <!-- Player stats div with all the information for the player -->
+        <div id="player-stats">
+            <ul>
+                <li>Name: <span class="name" id="playerName"></span></li>
+                <li>Gold: <span class="gold" id="playerGold"></span></li>
+                <li>Health: <span class="health" id="playerHealth"></span>/<span class="health" id="playerMaxHealth"></span></li>
+                <li>Damage: <span class="damage" id="weaponDmg"></span></li>
+                <li>Key: <span class="key" id="keyOfDestiny"></span></li>
+            </ul>
+        </div>
+
+        <!-- Text div: Place, description and enemy stat/value/descriptions will be set up -->
+        <div id="textContainer">
+            <h2 id="placeText"></h2>
+            <p id="descriptionText"></p>
+            <ul id="actionTextUl">
+                <li>
+                    <h3 id="actionTextOptions"></h3>
+                    <p id="actionTextOption"></p>
+                </li>
+                <li>
+                    <h3 id="actionTextValues"></h3>
+                    <p id="actionTextValue"></p>
+                </li>
+                <li>
+                    <h3 id="actionTextDescs"></h3>
+                    <p id="actionTextDesc"></p>
+                </li>
+            </ul>
+
+        </div>
+        <!-- Setting up a button container with all the buttons in the game. All buttons except the Start Game button will be hidden first, and displayed if needed -->
+        
+        <div id="buttonContainer"> 
+            <ul>
+                <li><button class= "locationButton" id="buttonVisitTown" onclick="visitPlace('visitTown')" hidden="true">Town Square</button>
+                    <button class= "locationButton" id="buttonVisitInn" onclick="visitPlace('visitInn')" hidden="true">Inn</button>
+                    <button class= "locationButton" id="buttonVisitSmith" onclick="visitPlace('visitSmith')" hidden="true">Smith</button>
+                    <button class= "locationButton" id="buttonVisitQuest" onclick="visitPlace('visitQuest')" hidden="true">Quest</button>
+                    <button class="startButton" id="buttonStartGame" onclick="startGame()">Start Game</button>
+                    <button class="startButton" id="buttonRestartGame" onclick="setUpGame()" hidden="true">Restart Game</button>
+                    <button class= "enemyButton" id="buttonVisitGoblin" onclick="visitPlace('visitGoblin')" hidden="true">Goblin</button>
+                    <button class= "enemyButton" id="buttonVisitOrc" onclick="visitPlace('visitOrc')" hidden="true">Orc</button>
+                    <button class= "enemyButton" id="buttonVisitDragon" onclick="visitPlace('visitDragon')" hidden="true">Dragon</button>
+
+                    <button class= "actionButton" id="buttonTakeRest" onclick="takeRest()" hidden="true">Take Rest</button>
+                    <button class= "actionButton" id="buttonIncreaseHealth" onclick="increaseHealth()" hidden="true">Increase Health</button>
+                    <button class= "actionButton" id="buttonUpgradeWeapon" onclick="upgradeWeapon()" hidden="true">Upgrade Weapon</button>
+                    <button class= "actionButton" id="buttonAttack" onclick="attack()" hidden="true">Attack</button>
+                </li>
+            </ul>
+
+            
+            
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
