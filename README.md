@@ -5,7 +5,7 @@
 ---
 
 ## 🌐 **Play the Game**
-[Click here to play the game!](https://kornti-debug.github.io/Slay-the-Dragon/)
+[Click here to play the game!](https://kornti-debug.github.io/Slay-The-Dragon/)
 
 ---
 
